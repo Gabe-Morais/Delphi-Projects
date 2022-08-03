@@ -1,0 +1,82 @@
+unit untAplic;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls,
+  Vcl.Imaging.jpeg, Vcl.Menus;
+
+type
+  TfrmAplic = class(TForm)
+    StatusBar1: TStatusBar;
+    Timer1: TTimer;
+    Image1: TImage;
+    MainMenu1: TMainMenu;
+    Aplicativos1: TMenuItem;
+    Sair1: TMenuItem;
+    Calculadora1: TMenuItem;
+    BlocodeNotas1: TMenuItem;
+    BlocodeNotas2: TMenuItem;
+    Excel1: TMenuItem;
+    PowerPoint1: TMenuItem;
+    procedure Timer1Timer(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure Calculadora1Click(Sender: TObject);
+    procedure BlocodeNotas1Click(Sender: TObject);
+    procedure BlocodeNotas2Click(Sender: TObject);
+    procedure Excel1Click(Sender: TObject);
+    procedure PowerPoint1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmAplic: TfrmAplic;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmAplic.BlocodeNotas1Click(Sender: TObject);
+begin
+     WinExec('NotePad.exe', SW_SHOWNORMAL);
+end;
+
+procedure TfrmAplic.BlocodeNotas2Click(Sender: TObject);
+begin
+    WinExec('WordPad.exe', SW_SHOWNORMAL);
+end;
+
+procedure TfrmAplic.Calculadora1Click(Sender: TObject);
+begin
+    WinExec('calc.exe', SW_SHOWNORMAL );
+end;
+
+procedure TfrmAplic.Excel1Click(Sender: TObject);
+begin
+    WinExec('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Wordpad.exe', SW_SHOWNORMAL);
+end;
+
+procedure TfrmAplic.PowerPoint1Click(Sender: TObject);
+begin
+    WinExec('C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PowerPoint 2016.exe')
+end;
+
+procedure TfrmAplic.Sair1Click(Sender: TObject);
+begin
+  if application.MessageBox('Deseja Sair?', 'Confirme',
+  MB_YESNO + MB_ICONQUESTION+MB_DEFBUTTON2) = idyes then
+    Application.Terminate;
+
+end;
+
+procedure TfrmAplic.Timer1Timer(Sender: TObject);
+begin
+     StatusBar1.Panels[0].text := DateToStr(date);
+     StatusBar1.Panels[1].Text := FormatDateTime('hh:nn',time);
+end;
+
+end.

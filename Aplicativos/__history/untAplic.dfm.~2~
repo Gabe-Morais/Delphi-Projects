@@ -1,0 +1,41 @@
+object frmAplic: TfrmAplic
+  Left = 0
+  Top = 0
+  Caption = 'Aplicativos'
+  ClientHeight = 430
+  ClientWidth = 608
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 411
+    Width = 608
+    Height = 19
+    Panels = <
+      item
+        Width = 100
+      end
+      item
+        Width = 100
+      end
+      item
+        Width = 50
+      end>
+    ExplicitLeft = 280
+    ExplicitTop = 128
+    ExplicitWidth = 0
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 552
+    Top = 344
+  end
+end
