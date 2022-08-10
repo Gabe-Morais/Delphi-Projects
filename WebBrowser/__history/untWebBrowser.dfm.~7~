@@ -1,0 +1,96 @@
+object frmWebBrowser: TfrmWebBrowser
+  Left = 0
+  Top = 0
+  Caption = 'Web Browser Guaracity'
+  ClientHeight = 660
+  ClientWidth = 923
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlNavega: TPanel
+    Left = 0
+    Top = 0
+    Width = 923
+    Height = 80
+    Align = alTop
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    ExplicitLeft = 8
+    object Label1: TLabel
+      Left = 32
+      Top = 13
+      Width = 146
+      Height = 16
+      Caption = 'Digite o Endere'#231'o Web'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object edtWeb: TEdit
+      Left = 32
+      Top = 35
+      Width = 401
+      Height = 21
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 455
+      Top = 29
+      Width = 36
+      Height = 33
+      Hint = 'Acessar'
+      Caption = '&Help'
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+    object BitBtn1: TBitBtn
+      Left = 497
+      Top = 29
+      Width = 36
+      Height = 33
+      Hint = 'Volta'
+      Caption = 'Abort'
+      ModalResult = 3
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+    end
+    object BitBtn3: TBitBtn
+      Left = 539
+      Top = 29
+      Width = 36
+      Height = 33
+      Hint = 'Avan'#231'ar'
+      Caption = '&Help'
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+    object BitBtn4: TBitBtn
+      Left = 581
+      Top = 29
+      Width = 36
+      Height = 33
+      Caption = '&Help'
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+    end
+  end
+end
