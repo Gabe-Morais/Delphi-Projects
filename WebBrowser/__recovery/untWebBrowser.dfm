@@ -1,6 +1,7 @@
 object frmWebBrowser: TfrmWebBrowser
   Left = 0
   Top = 0
+  Align = alClient
   Caption = 'Web Browser Guaracity'
   ClientHeight = 660
   ClientWidth = 923
@@ -40,16 +41,23 @@ object frmWebBrowser: TfrmWebBrowser
     object edtWeb: TEdit
       Left = 32
       Top = 35
-      Width = 401
-      Height = 21
+      Width = 473
+      Height = 26
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 0
     end
     object BitBtn2: TBitBtn
-      Left = 455
-      Top = 29
+      Left = 519
+      Top = 28
       Width = 36
-      Height = 33
+      Height = 35
       Hint = 'Acessar'
+      Default = True
       Glyph.Data = {
         B60D0000424DB60D000000000000360000002800000030000000180000000100
         180000000000800D000000000000000000000000000000000000FFFFFFFFFFFF
@@ -165,9 +173,10 @@ object frmWebBrowser: TfrmWebBrowser
       ParentShowHint = False
       ShowHint = True
       TabOrder = 1
+      OnClick = BitBtn2Click
     end
     object BitBtn1: TBitBtn
-      Left = 497
+      Left = 561
       Top = 29
       Width = 36
       Height = 33
@@ -288,9 +297,10 @@ object frmWebBrowser: TfrmWebBrowser
       ParentShowHint = False
       ShowHint = True
       TabOrder = 2
+      OnClick = BitBtn1Click
     end
     object BitBtn3: TBitBtn
-      Left = 539
+      Left = 603
       Top = 29
       Width = 36
       Height = 33
@@ -410,9 +420,10 @@ object frmWebBrowser: TfrmWebBrowser
       ParentShowHint = False
       ShowHint = True
       TabOrder = 3
+      OnClick = BitBtn3Click
     end
     object BitBtn4: TBitBtn
-      Left = 581
+      Left = 645
       Top = 29
       Width = 36
       Height = 33
@@ -532,6 +543,24 @@ object frmWebBrowser: TfrmWebBrowser
       ParentShowHint = False
       ShowHint = True
       TabOrder = 4
+      OnClick = BitBtn4Click
     end
+  end
+  object WebBrowser1: TWebBrowser
+    Left = 0
+    Top = 80
+    Width = 923
+    Height = 580
+    Align = alClient
+    TabOrder = 1
+    ExplicitLeft = 8
+    ExplicitWidth = 300
+    ExplicitHeight = 150
+    ControlData = {
+      4C000000655F0000F23B00000000000000000000000000000000000000000000
+      000000004C000000000000000000000001000000E0D057007335CF11AE690800
+      2B2E126208000000000000004C0000000114020000000000C000000000000046
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000100000000000000000000000000000000000000}
   end
 end
