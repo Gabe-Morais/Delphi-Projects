@@ -34,7 +34,7 @@ implementation
 
 procedure TfrmCursos.btnPesquisarClick(Sender: TObject);
 begin
-    cursos.Locate('Nome', edtPesquisa.Text, )
+    cursos.Locate('Nome',edtPesquisa.Text,[loCaseInsensitive,loPartialKey]);
 end;
 
 end.
