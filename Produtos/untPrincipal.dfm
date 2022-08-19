@@ -1,0 +1,30 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Menu Principal'
+  ClientHeight = 653
+  ClientWidth = 986
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  Menu = MainMenu1
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 88
+    Top = 80
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Produto: TMenuItem
+        Caption = 'Produto'
+        OnClick = ProdutoClick
+      end
+    end
+  end
+end
