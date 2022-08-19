@@ -1,9 +1,9 @@
-object frmProduto: TfrmProduto
+﻿object frmProduto: TfrmProduto
   Left = 0
   Top = 0
   Caption = 'Cadastro de Produtos'
-  ClientHeight = 442
-  ClientWidth = 661
+  ClientHeight = 539
+  ClientWidth = 521
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,6 +16,117 @@ object frmProduto: TfrmProduto
   Visible = True
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 33
+    Height = 13
+    Caption = 'C'#243'digo'
+    FocusControl = DBEdit1
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 48
+    Width = 27
+    Height = 13
+    Caption = 'Nome'
+    FocusControl = DBEdit2
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 133
+    Width = 24
+    Height = 13
+    Caption = 'Valor'
+    FocusControl = DBEdit3
+  end
+  object Label4: TLabel
+    Left = 8
+    Top = 88
+    Width = 29
+    Height = 13
+    Caption = 'Marca'
+    FocusControl = DBEdit4
+  end
+  object Label5: TLabel
+    Left = 8
+    Top = 176
+    Width = 56
+    Height = 13
+    Caption = 'Quantidade'
+    FocusControl = DBEdit5
+  end
+  object DBEdit1: TDBEdit
+    Left = 8
+    Top = 24
+    Width = 134
+    Height = 21
+    DataField = 'C'#243'digo'
+    DataSource = dts
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 8
+    Top = 64
+    Width = 200
+    Height = 21
+    DataField = 'Nome'
+    DataSource = dts
+    TabOrder = 1
+  end
+  object DBEdit3: TDBEdit
+    Left = 8
+    Top = 149
+    Width = 200
+    Height = 21
+    DataField = 'Valor'
+    DataSource = dts
+    TabOrder = 2
+  end
+  object DBEdit4: TDBEdit
+    Left = 8
+    Top = 104
+    Width = 200
+    Height = 21
+    DataField = 'Marca'
+    DataSource = dts
+    TabOrder = 3
+  end
+  object DBEdit5: TDBEdit
+    Left = 8
+    Top = 192
+    Width = 134
+    Height = 21
+    DataField = 'Quantidade'
+    DataSource = dts
+    TabOrder = 4
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 419
+    Width = 521
+    Height = 120
+    Align = alBottom
+    TabOrder = 5
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Top = 394
+    Width = 521
+    Height = 25
+    Align = alBottom
+    TabOrder = 6
+  end
   object conn: TADOConnection
     Connected = True
     ConnectionString = 
@@ -25,18 +136,39 @@ object frmProduto: TfrmProduto
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 288
-    Top = 288
+    Left = 16
+    Top = 256
   end
   object Produto: TADODataSet
     Connection = conn
+    CursorType = ctStatic
     CommandText = 'select * from Produto'
     Parameters = <>
-    Left = 368
-    Top = 288
+    Left = 96
+    Top = 256
+    object ProdutoCódigo: TAutoIncField
+      FieldName = 'C'#243'digo'
+      ReadOnly = True
+    end
+    object ProdutoNome: TWideStringField
+      FieldName = 'Nome'
+      Size = 255
+    end
+    object ProdutoValor: TBCDField
+      FieldName = 'Valor'
+      Precision = 19
+    end
+    object ProdutoMarca: TWideStringField
+      FieldName = 'Marca'
+      Size = 255
+    end
+    object ProdutoQuantidade: TIntegerField
+      FieldName = 'Quantidade'
+    end
   end
-  object DataSource1: TDataSource
-    Left = 456
-    Top = 288
+  object dts: TDataSource
+    DataSet = Produto
+    Left = 184
+    Top = 256
   end
 end
