@@ -1,0 +1,45 @@
+unit untPesquisaCidade;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.StdCtrls;
+
+type
+  TfrmPesquisaCidade = class(TForm)
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    Label1: TLabel;
+    edtCod: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPesquisaCidade: TfrmPesquisaCidade;
+
+implementation
+
+{$R *.dfm}
+
+uses untModulo;
+
+procedure TfrmPesquisaCidade.Button1Click(Sender: TObject);
+var vSQL: string;
+begin
+  vSQL := '';
+  vSQL :=' SELECT * FROM CIDADE WJERE CODIGO_CIDADE IS NOT NULL ';
+  if (edtCod.Text <> '') then
+      vSQL := vSQL + ' AND CODIGO_CIDADE = ' + edtCod.Text;
+end;
+end;
+
+end.

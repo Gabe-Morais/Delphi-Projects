@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/08/23 21:11:24.950,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/08/23 21:14:23.710,C:\Users\etec\Desktop\Delphi-Projects\Novo\untPesquisaCidade.pas=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/08/23 21:14:23.710,C:\Users\etec\Desktop\Delphi-Projects\Novo\untPesquisaCidade.dfm=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/08/23 21:14:30.638,C:\Users\etec\Desktop\Delphi-Projects\Novo\prjPesquisaCidade.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2022/08/23 21:11:24.000.950,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/23 21:14:23.000.710,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\etec\Desktop\Delphi-Projects\Novo\untPesquisaCidade.dfm</Transaction>
+    <Transaction>2022/08/23 21:14:23.000.710,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\etec\Desktop\Delphi-Projects\Novo\untPesquisaCidade.pas</Transaction>
+    <Transaction>2022/08/23 21:14:30.000.638,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Desktop\Delphi-Projects\Novo\prjPesquisaCidade.dproj</Transaction>
+    <Transaction>2022/08/23 21:20:47.096,=C:\Users\etec\Desktop\Delphi-Projects\PesquisaCidades\Unit1.pas</Transaction>
+    <Transaction>2022/08/23 21:25:09.124,C:\Users\etec\Desktop\Delphi-Projects\PesquisaCidades\untModulo.pas=C:\Users\etec\Desktop\Delphi-Projects\PesquisaCidades\Unit1.pas</Transaction>
+    <Transaction>2022/08/23 21:25:09.124,C:\Users\etec\Desktop\Delphi-Projects\PesquisaCidades\untModulo.dfm=C:\Users\etec\Desktop\Delphi-Projects\PesquisaCidades\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>

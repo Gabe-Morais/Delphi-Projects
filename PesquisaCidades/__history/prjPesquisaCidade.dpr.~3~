@@ -1,0 +1,16 @@
+program prjPesquisaCidade;
+
+uses
+  Vcl.Forms,
+  untPesquisaCidade in 'untPesquisaCidade.pas' {Form1},
+  untModulo in 'untModulo.pas' {Modulo: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TModulo, Modulo);
+  Application.Run;
+end.

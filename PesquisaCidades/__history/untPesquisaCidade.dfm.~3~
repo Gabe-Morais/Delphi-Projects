@@ -1,0 +1,84 @@
+object frmPesquisaCidade: TfrmPesquisaCidade
+  Left = 0
+  Top = 0
+  Caption = 'Pesquisa de Cidades'
+  ClientHeight = 373
+  ClientWidth = 507
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 192
+    Width = 33
+    Height = 13
+    Caption = 'C'#243'digo'
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 248
+    Width = 27
+    Height = 13
+    Caption = 'Nome'
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 507
+    Height = 169
+    Align = alTop
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'CODIGO_CIDADE'
+        Title.Caption = 'COD'
+        Width = 42
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Visible = True
+      end>
+  end
+  object Edit1: TEdit
+    Left = 24
+    Top = 211
+    Width = 153
+    Height = 21
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 24
+    Top = 267
+    Width = 153
+    Height = 21
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 56
+    Top = 328
+    Width = 75
+    Height = 25
+    Caption = 'Pesquisar'
+    TabOrder = 3
+  end
+  object DataSource1: TDataSource
+    DataSet = Modulo.qryCidade
+    Left = 256
+    Top = 200
+  end
+end
