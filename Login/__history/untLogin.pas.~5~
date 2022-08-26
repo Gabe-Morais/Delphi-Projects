@@ -1,0 +1,40 @@
+unit untLogin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmLogin = class(TForm)
+    Image1: TImage;
+    edtLogin: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    edtSenha: TEdit;
+    btnLogar: TBitBtn;
+    btnLimpar: TBitBtn;
+    procedure btnLimparClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogin: TfrmLogin;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmLogin.btnLimparClick(Sender: TObject);
+begin
+  edtLogin.Clear;
+  edSenha.clear/
+  edtLogin.SetFocus
+end;
+
+end.
