@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/09/01 21:06:54.047,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/01 21:21:46.807,C:\Users\etec\Desktop\Delphi-Projects\JogoDaVelha\untJogoDaVelha.pas=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/01 21:21:46.807,C:\Users\etec\Desktop\Delphi-Projects\JogoDaVelha\untJogoDaVelha.dfm=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/09/01 21:21:52.367,C:\Users\etec\Desktop\Delphi-Projects\JogoDaVelha\prjJogoDaVelha.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

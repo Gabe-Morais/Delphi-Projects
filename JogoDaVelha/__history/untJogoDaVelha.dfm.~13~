@@ -1,0 +1,151 @@
+object frmJogoDaVelha: TfrmJogoDaVelha
+  Left = 0
+  Top = 0
+  Caption = 'Jogo da Velha'
+  ClientHeight = 314
+  ClientWidth = 259
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object rgpJogador: TRadioGroup
+    Left = 0
+    Top = 0
+    Width = 259
+    Height = 90
+    Align = alTop
+    Caption = 'Jogador'
+    ItemIndex = 0
+    Items.Strings = (
+      'Jogador O'
+      'Jogador X')
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitWidth = 257
+  end
+  object btn3: TBitBtn
+    Left = 176
+    Top = 96
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btn3Click
+  end
+  object btn6: TBitBtn
+    Left = 176
+    Top = 168
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object btn9: TBitBtn
+    Left = 176
+    Top = 240
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object btn2: TBitBtn
+    Left = 96
+    Top = 96
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btn2Click
+  end
+  object btn5: TBitBtn
+    Left = 96
+    Top = 168
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+  end
+  object btn8: TBitBtn
+    Left = 96
+    Top = 240
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+  end
+  object btn1: TBitBtn
+    Left = 16
+    Top = 96
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = btn1Click
+  end
+  object btn4: TBitBtn
+    Left = 16
+    Top = 168
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object btn7: TBitBtn
+    Left = 16
+    Top = 240
+    Width = 65
+    Height = 57
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -48
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 9
+  end
+end
