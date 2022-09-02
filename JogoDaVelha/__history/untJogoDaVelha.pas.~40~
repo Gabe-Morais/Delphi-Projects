@@ -62,10 +62,6 @@ begin
 
     inc(cont);
 
-    if cont >= 5 then
-
-    vencedor();
-
 end;
 
 procedure TfrmJogoDaVelha.btn2Click(Sender: TObject);
@@ -86,9 +82,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn3Click(Sender: TObject);
@@ -109,9 +102,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn4Click(Sender: TObject);
@@ -132,9 +122,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn5Click(Sender: TObject);
@@ -155,9 +142,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn6Click(Sender: TObject);
@@ -178,9 +162,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn7Click(Sender: TObject);
@@ -201,9 +182,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn8Click(Sender: TObject);
@@ -224,9 +202,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.btn9Click(Sender: TObject);
@@ -247,9 +222,6 @@ begin
     rgpJogador.ItemIndex := 0;
 
     inc(cont);
-        if cont >= 5 then
-
-    vencedor();
 end;
 
 procedure TfrmJogoDaVelha.vencedor;
@@ -263,7 +235,7 @@ begin
       (Btn1.Caption = 'X') and (btn5.Caption = 'X') and (btn9.Caption = 'X') or
       (Btn3.Caption = 'X') and (btn5.Caption = 'X') and (btn7.Caption = 'X'))then
 
-      Application.MessageBox('Jogador X Venceu','Campeão', MB_OK+MB_ICONWARNING)
+      Application.MessageBox('Jogardor X Venceu','Campeão', MB_OK+MB_ICONWARNING)
 
       else if
       ((Btn1.Caption = 'O') and (btn2.Caption = 'O') and (btn3.Caption = 'O') or
@@ -274,7 +246,7 @@ begin
       (Btn3.Caption = 'O') and (btn6.Caption = 'O') and (btn9.Caption = 'O') or
       (Btn1.Caption = 'O') and (btn5.Caption = 'O') and (btn9.Caption = 'O') or
       (Btn3.Caption = 'O') and (btn5.Caption = 'O') and (btn7.Caption = 'O'))then
-       Application.MessageBox('Jogador O Venceu','Campeão', MB_OK+MB_ICONWARNING)
+       Application.MessageBox('Jogardor O Venceu','Campeão', MB_OK+MB_ICONWARNING)
 
 
 end;
