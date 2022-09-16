@@ -2,7 +2,7 @@ program prjCalculo;
 
 uses
   Vcl.Forms,
-  untCalculo in 'untCalculo.pas' {frmCalculo},
+  untCalculo in 'untCalculo.pas' {frmMedia},
   Vcl.Themes,
   Vcl.Styles;
 
@@ -12,6 +12,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   TStyleManager.TrySetStyle('Tablet Dark');
-  Application.CreateForm(TfrmCalculo, frmCalculo);
+  Application.CreateForm(TfrmMedia, frmMedia);
   Application.Run;
 end.

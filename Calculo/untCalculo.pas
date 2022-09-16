@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TfrmCalculo = class(TForm)
+  TfrmMedia = class(TForm)
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -31,7 +31,7 @@ type
   end;
 
 var
-  frmCalculo: TfrmCalculo;
+  frmMedia: TfrmMedia;
 
 implementation
 
@@ -39,12 +39,12 @@ implementation
 
 { TfrmCalculo }
 
-procedure TfrmCalculo.Button1Click(Sender: TObject);
+procedure TfrmMedia.Button1Click(Sender: TObject);
 begin
     limpar();
 end;
 
-procedure TfrmCalculo.Button2Click(Sender: TObject);
+procedure TfrmMedia.Button2Click(Sender: TObject);
 var res, v1, v2, v3: real;
 begin
     v1 := StrToFloat(edtn1.Text);
@@ -54,13 +54,13 @@ begin
     ShowMessage('A média dos valores é: ' + FormatFloat('0.0', res));
 end;
 
-procedure TfrmCalculo.Button3Click(Sender: TObject);
+procedure TfrmMedia.Button3Click(Sender: TObject);
 begin
       fechar();
 
 end;
 
-procedure TfrmCalculo.fechar;
+procedure TfrmMedia.fechar;
 begin
 if Application.MessageBox('Deseja sair?', 'Confirme',
       MB_YESNO+MB_ICONQUESTION+MB_DEFBUTTON2) = idyes then
@@ -69,12 +69,12 @@ if Application.MessageBox('Deseja sair?', 'Confirme',
       abort;
 end;
 
-procedure TfrmCalculo.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TfrmMedia.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 fechar();
 end;
 
-procedure TfrmCalculo.limpar;
+procedure TfrmMedia.limpar;
 begin
     edtn1.Clear;
     edtn2.Clear;
@@ -82,7 +82,7 @@ begin
     edtn1.SetFocus;
 end;
 
-function TfrmCalculo.media(n1, n2, n3: real): real;
+function TfrmMedia.media(n1, n2, n3: real): real;
 begin
   result := (n1 + n1 + n3) / 3
 end;

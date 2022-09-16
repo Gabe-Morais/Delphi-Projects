@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/30 21:13:19.000.426,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/08/30 21:14:20.000.493,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\etec\Desktop\Delphi-Projects\Calculo\untCalculo.dfm</Transaction>
+    <Transaction>2022/08/30 21:14:20.000.493,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\etec\Desktop\Delphi-Projects\Calculo\untCalculo.pas</Transaction>
+    <Transaction>2022/08/30 21:14:24.000.055,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Desktop\Delphi-Projects\Calculo\prjCalculo.dproj</Transaction>
+    <Transaction>2022/09/15 21:27:26.000.744,C:\Users\etec\Desktop\Delphi-Projects\Calculo\untCalculo.pas=C:\Users\etec\Desktop\Delphi-Projects\Exercicios\Exercicio1\untCalculo.pas</Transaction>
+    <Transaction>2022/09/15 21:27:26.000.744,C:\Users\etec\Desktop\Delphi-Projects\Calculo\untCalculo.dfm=C:\Users\etec\Desktop\Delphi-Projects\Exercicios\Exercicio1\untCalculo.dfm</Transaction>
+    <Transaction>2022/09/15 21:27:36.000.407,C:\Users\etec\Desktop\Delphi-Projects\Calculo\prjCalculo.dproj=C:\Users\etec\Desktop\Delphi-Projects\Exercicios\Exercicio1\prjCalculo.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

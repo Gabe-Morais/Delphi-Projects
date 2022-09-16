@@ -1,9 +1,9 @@
-object frmCalculo: TfrmCalculo
+object frmMedia: TfrmMedia
   Left = 0
   Top = 0
-  Caption = 'Calculo'
-  ClientHeight = 177
-  ClientWidth = 313
+  Caption = 'M'#233'dia - Exercicio 1'
+  ClientHeight = 204
+  ClientWidth = 170
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,68 +15,68 @@ object frmCalculo: TfrmCalculo
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 8
-    Top = 69
+    Left = 16
+    Top = 51
     Width = 33
     Height = 13
     Caption = 'Valor 2'
   end
   object Label2: TLabel
-    Left = 8
-    Top = 13
+    Left = 16
+    Top = 5
     Width = 33
     Height = 13
     Caption = 'Valor 1'
   end
   object Label3: TLabel
-    Left = 8
-    Top = 125
+    Left = 16
+    Top = 101
     Width = 33
     Height = 13
     Caption = 'Valor 3'
   end
   object edtn3: TEdit
-    Left = 8
-    Top = 144
-    Width = 121
+    Left = 16
+    Top = 120
+    Width = 137
     Height = 21
     TabOrder = 0
   end
   object edtn2: TEdit
-    Left = 8
-    Top = 88
-    Width = 121
+    Left = 16
+    Top = 70
+    Width = 137
     Height = 21
     TabOrder = 1
   end
   object edtn1: TEdit
-    Left = 8
-    Top = 32
-    Width = 121
+    Left = 16
+    Top = 24
+    Width = 137
     Height = 21
     TabOrder = 2
   end
   object Button1: TButton
-    Left = 152
-    Top = 86
-    Width = 75
+    Left = 16
+    Top = 163
+    Width = 64
     Height = 25
     Caption = 'Limpar'
     TabOrder = 3
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 152
-    Top = 30
-    Width = 75
+    Left = 86
+    Top = 163
+    Width = 64
     Height = 25
     Caption = 'M'#233'dia'
     TabOrder = 4
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 152
-    Top = 142
+    Left = 344
+    Top = 182
     Width = 75
     Height = 25
     Caption = 'Sair'
