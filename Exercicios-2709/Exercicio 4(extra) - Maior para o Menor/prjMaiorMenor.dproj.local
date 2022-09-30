@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/09/29 21:18:07.858,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/09/29 21:22:10.847,C:\Users\etec\Desktop\Exercicios-2709\Exercicio 4(extra) - Maior para o Menor\untMaiorMenor.pas=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/09/29 21:22:10.847,C:\Users\etec\Desktop\Exercicios-2709\Exercicio 4(extra) - Maior para o Menor\untMaiorMenor.dfm=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/09/29 21:22:16.352,C:\Users\etec\Desktop\Exercicios-2709\Exercicio 4(extra) - Maior para o Menor\prjMaiorMenor.dproj=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2022/09/29 21:18:07.000.858,=C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 21:22:10.000.847,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\etec\Desktop\Exercicios-2709\Exercicio 4(extra) - Maior para o Menor\untMaiorMenor.dfm</Transaction>
+    <Transaction>2022/09/29 21:22:10.000.847,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\etec\Desktop\Exercicios-2709\Exercicio 4(extra) - Maior para o Menor\untMaiorMenor.pas</Transaction>
+    <Transaction>2022/09/29 21:22:16.000.352,C:\Users\etec\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\etec\Desktop\Exercicios-2709\Exercicio 4(extra) - Maior para o Menor\prjMaiorMenor.dproj</Transaction>
   </Transactions>
 </BorlandProject>

@@ -1,9 +1,9 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'vobject Label1: TLabel'
-  ClientHeight = 338
-  ClientWidth = 613
+  Caption = 'Maior para o Menor'
+  ClientHeight = 223
+  ClientWidth = 441
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,61 +14,70 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 58
-    Top = 85
-    Width = 31
+    Left = 18
+    Top = 21
+    Width = 33
     Height = 13
-    Caption = 'Label1'
+    Caption = 'Valor 1'
   end
   object Label2: TLabel
-    Left = 208
-    Top = 85
-    Width = 31
+    Left = 168
+    Top = 21
+    Width = 33
     Height = 13
-    Caption = 'Label1'
+    Caption = 'Valor 2'
   end
   object Label3: TLabel
-    Left = 344
-    Top = 85
-    Width = 31
+    Left = 304
+    Top = 21
+    Width = 33
     Height = 13
-    Caption = 'Label1'
+    Caption = 'Valor 3'
   end
   object memResultado: TMemo
-    Left = 248
-    Top = 168
+    Left = 18
+    Top = 80
     Width = 185
     Height = 89
     TabOrder = 0
   end
   object edtValor2: TEdit
-    Left = 208
-    Top = 104
+    Left = 168
+    Top = 40
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object edtValor1: TEdit
-    Left = 58
-    Top = 104
+    Left = 18
+    Top = 40
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object edtValor3: TEdit
-    Left = 344
-    Top = 104
+    Left = 304
+    Top = 40
     Width = 121
     Height = 21
     TabOrder = 3
   end
   object BitBtn1: TBitBtn
-    Left = 104
-    Top = 216
+    Left = 18
+    Top = 184
     Width = 75
     Height = 25
     Caption = 'Comparar'
     TabOrder = 4
     OnClick = BitBtn1Click
+  end
+  object BitBtn2: TBitBtn
+    Left = 126
+    Top = 184
+    Width = 75
+    Height = 25
+    Caption = 'Limpar'
+    TabOrder = 5
+    OnClick = BitBtn2Click
   end
 end
