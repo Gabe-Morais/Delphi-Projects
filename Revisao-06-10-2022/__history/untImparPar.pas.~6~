@@ -41,7 +41,7 @@ begin    inicio:=StrToInt(edtInicio.Text);
     fim:=StrToInt(edtFim.Text);
     for i := inicio to fim do
       begin
-        if (i mod 2 = 0) then
+        if i mod 2 = 0 then
            lbPares.Items.Add(IntToStr(i))
         else
            lbImpares.Items.Add(IntToStr(i));
