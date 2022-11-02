@@ -3,8 +3,22 @@ inherited frmCadCidade: TfrmCadCidade
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCampos: TPanel
-    ExplicitLeft = 1
-    ExplicitTop = 126
+    object Label2: TLabel
+      Left = 48
+      Top = 48
+      Width = 27
+      Height = 13
+      Caption = 'Nome'
+      FocusControl = dbeNome
+    end
+    object Label3: TLabel
+      Left = 48
+      Top = 88
+      Width = 22
+      Height = 13
+      Caption = 'Sigla'
+      FocusControl = dbeSigla
+    end
     object Label1: TLabel
       Left = 48
       Top = 8
@@ -13,47 +27,30 @@ inherited frmCadCidade: TfrmCadCidade
       Caption = 'C'#243'digo'
       FocusControl = DBEdit1
     end
-    object Label2: TLabel
-      Left = 48
-      Top = 48
-      Width = 27
-      Height = 13
-      Caption = 'Nome'
-      FocusControl = DBEdit2
-    end
-    object Label3: TLabel
-      Left = 48
-      Top = 88
-      Width = 22
-      Height = 13
-      Caption = 'Sigla'
-      FocusControl = DBEdit3
-    end
-    object DBEdit1: TDBEdit
-      Left = 48
-      Top = 24
-      Width = 73
-      Height = 21
-      DataField = 'IDCIDADE'
-      DataSource = dts
-      ReadOnly = True
-      TabOrder = 0
-    end
-    object DBEdit2: TDBEdit
+    object dbeNome: TDBEdit
       Left = 48
       Top = 64
       Width = 265
       Height = 21
       DataField = 'NOMECIDADE'
       DataSource = dts
-      TabOrder = 1
+      TabOrder = 0
     end
-    object DBEdit3: TDBEdit
+    object dbeSigla: TDBEdit
       Left = 48
       Top = 104
       Width = 30
       Height = 21
       DataField = 'SIGLAESTADO'
+      DataSource = dts
+      TabOrder = 1
+    end
+    object DBEdit1: TDBEdit
+      Left = 48
+      Top = 24
+      Width = 134
+      Height = 21
+      DataField = 'IDCIDADE'
       DataSource = dts
       TabOrder = 2
     end

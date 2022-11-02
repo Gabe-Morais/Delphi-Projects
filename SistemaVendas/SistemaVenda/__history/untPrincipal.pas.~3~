@@ -37,9 +37,8 @@ uses untCadCidade;
 
 procedure TfrmPrincipal.Cidade1Click(Sender: TObject);
 begin
-    Application.CreateForm(TfrmCadCidade.frmCadCidade);
-    frmCadCidade.Show;
-end;
+     Application.CreateForm(TfrmCadCidade,frmCadCidade);
+     frmCadCidade.Show;
 end;
 
 procedure TfrmPrincipal.Sair1Click(Sender: TObject);

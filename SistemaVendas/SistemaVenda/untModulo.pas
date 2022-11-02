@@ -25,6 +25,14 @@ type
     qryProdutoDESCRPRODUTO: TStringField;
     qryProdutoVALORPRODUTO: TBCDField;
     qryProdutoQTDEPRODUTO: TIntegerField;
+    qryCliente: TFDQuery;
+    qryClienteIDCLIENTE: TIntegerField;
+    qryClienteNOMECLIENTE: TStringField;
+    qryClienteENDERCLIENTE: TStringField;
+    qryClienteCPFCLIENTE: TStringField;
+    qryClienteFONECLIENTE: TStringField;
+    qryClienteIDCIDADE: TIntegerField;
+    qryClienteNOMECIDADE: TStringField;
   private
     { Private declarations }
   public
@@ -51,7 +59,7 @@ begin
       vSQL := ' SELECT MAX( '+ id + ') + 1 FROM '+ tabela;
       qryAutoNum.SQL.Text := vSQL;
       qryAutoNum.Open;
-      if qryAutoNum.fields[0].AsString = '' Then
+      if qryAutoNum.fields[0].AsString = '' then
          autonum := '1'
       else
          AutoNum := qryAutoNum.fields[0].AsString;

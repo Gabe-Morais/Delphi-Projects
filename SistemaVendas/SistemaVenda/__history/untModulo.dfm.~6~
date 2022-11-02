@@ -19,8 +19,8 @@ object modulo: Tmodulo
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
     VendorLib = 
-      'C:\Users\etec\Desktop\Delphi-Projects\SistemaVendas\SistemaVenda' +
-      '\libmysql.dll'
+      'C:\Users\edriano.campana\Desktop\versao_2710\SistemaVenda\libmys' +
+      'ql.dll'
     Left = 288
     Top = 32
   end
@@ -61,9 +61,10 @@ object modulo: Tmodulo
     Connection = conexao
     SQL.Strings = (
       'SELECT * FROM PRODUTO')
-    Left = 256
-    Top = 144
+    Left = 240
+    Top = 136
     object qryProdutoIDPRODUTO: TIntegerField
+      DisplayLabel = 'C'#243'digo'
       FieldName = 'IDPRODUTO'
       Origin = 'IDPRODUTO'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
@@ -71,12 +72,14 @@ object modulo: Tmodulo
     end
     object qryProdutoDESCRPRODUTO: TStringField
       AutoGenerateValue = arDefault
+      DisplayLabel = 'Descri'#231#227'o'
       FieldName = 'DESCRPRODUTO'
       Origin = 'DESCRPRODUTO'
       Size = 50
     end
     object qryProdutoVALORPRODUTO: TBCDField
       AutoGenerateValue = arDefault
+      DisplayLabel = 'Valor'
       FieldName = 'VALORPRODUTO'
       Origin = 'VALORPRODUTO'
       Precision = 8
@@ -84,6 +87,7 @@ object modulo: Tmodulo
     end
     object qryProdutoQTDEPRODUTO: TIntegerField
       AutoGenerateValue = arDefault
+      DisplayLabel = 'Quantidade'
       FieldName = 'QTDEPRODUTO'
       Origin = 'QTDEPRODUTO'
     end

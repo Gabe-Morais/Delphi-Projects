@@ -117,8 +117,12 @@
             <Form>frmCadCidade</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="untProduto.pas">
+        <DCCReference Include="untCadProduto.pas">
             <Form>frmCadProduto</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="untCadCliente.pas">
+            <Form>frmCadCliente</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

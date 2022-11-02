@@ -86,7 +86,7 @@ end;
 
 procedure TfrmPadrao.FormDestroy(Sender: TObject);
 begin
-  dts.DataSet.Close;
+     dts.DataSet.Close;
 end;
 
 procedure TfrmPadrao.habilita(ativa: boolean);

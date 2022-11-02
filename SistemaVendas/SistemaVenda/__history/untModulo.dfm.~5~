@@ -19,8 +19,8 @@ object modulo: Tmodulo
   end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
     VendorLib = 
-      'C:\Users\etec\Desktop\Delphi-Projects\SistemaVendas\SistemaVenda' +
-      '\libmysql.dll'
+      'C:\Users\edriano.campana\Desktop\versao_2710\SistemaVenda\libmys' +
+      'ql.dll'
     Left = 288
     Top = 32
   end
