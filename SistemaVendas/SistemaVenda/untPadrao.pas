@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons,
-  Data.DB, Vcl.Grids, Vcl.DBGrids;
+  Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.Mask, Vcl.DBCtrls;
 
 type
   TfrmPadrao = class(TForm)
@@ -20,6 +20,7 @@ type
     btnFechar: TBitBtn;
     dts: TDataSource;
     dbg: TDBGrid;
+    DataSource1: TDataSource;
     pnlCampos: TPanel;
     procedure btnAdicionarClick(Sender: TObject);
     procedure btnAlterarClick(Sender: TObject);

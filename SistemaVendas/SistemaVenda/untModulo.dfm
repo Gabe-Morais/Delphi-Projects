@@ -97,14 +97,8 @@ object modulo: Tmodulo
     Connection = conexao
     SQL.Strings = (
       'SELECT * FROM CLIENTE')
-    Left = 328
+    Left = 344
     Top = 136
-    object qryClienteCPFCLIENTE: TStringField
-      AutoGenerateValue = arDefault
-      DisplayLabel = 'CPF'
-      FieldName = 'CPFCLIENTE'
-      Origin = 'CPFCLIENTE'
-    end
     object qryClienteIDCLIENTE: TIntegerField
       DisplayLabel = 'C'#243'digo'
       FieldName = 'IDCLIENTE'
@@ -126,11 +120,19 @@ object modulo: Tmodulo
       Origin = 'ENDERCLIENTE'
       Size = 50
     end
+    object qryClienteCPFCLIENTE: TStringField
+      AutoGenerateValue = arDefault
+      DisplayLabel = 'CPF'
+      FieldName = 'CPFCLIENTE'
+      Origin = 'CPFCLIENTE'
+      EditMask = '000\.000\.000\-0;1_'
+    end
     object qryClienteFONECLIENTE: TStringField
       AutoGenerateValue = arDefault
       DisplayLabel = 'Telefone'
       FieldName = 'FONECLIENTE'
       Origin = 'FONECLIENTE'
+      EditMask = '!\(99\)00000-0000;1;_'
     end
     object qryClienteIDCIDADE: TIntegerField
       AutoGenerateValue = arDefault
@@ -144,9 +146,63 @@ object modulo: Tmodulo
       LookupDataSet = qryCidade
       LookupKeyFields = 'IDCIDADE'
       LookupResultField = 'NOMECIDADE'
-      KeyFields = 'IDCLIENTE'
+      KeyFields = 'IDCIDADE'
       Size = 50
       Lookup = True
+    end
+  end
+  object qryVenda: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'SELECT V.*,'
+      '   C.NOMECLIENTE'
+      'FROM VENDA V, CLIENTE C'
+      'WHERE V.IDCLIENTE = C.IDCLIENTE')
+    Left = 456
+    Top = 136
+    object qryVendaIDVENDA: TIntegerField
+      DisplayLabel = 'N'#250'mero'
+      FieldName = 'IDVENDA'
+      Origin = 'IDVENDA'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryVendaDATAVENDA: TDateField
+      AutoGenerateValue = arDefault
+      DisplayLabel = 'Data'
+      FieldName = 'DATAVENDA'
+      Origin = 'DATAVENDA'
+      EditMask = '!99/99/0000;1;_'
+    end
+    object qryVendaHORAVENDA: TTimeField
+      AutoGenerateValue = arDefault
+      DisplayLabel = 'Hora'
+      FieldName = 'HORAVENDA'
+      Origin = 'HORAVENDA'
+      EditMask = '!90:00;1;_'
+    end
+    object qryVendaVALORVENDA: TBCDField
+      AutoGenerateValue = arDefault
+      DisplayLabel = 'Total'
+      FieldName = 'VALORVENDA'
+      Origin = 'VALORVENDA'
+      currency = True
+      Precision = 8
+      Size = 2
+    end
+    object qryVendaIDCLIENTE: TIntegerField
+      AutoGenerateValue = arDefault
+      DisplayLabel = 'Cliente'
+      FieldName = 'IDCLIENTE'
+      Origin = 'IDCLIENTE'
+    end
+    object qryVendaNOMECLIENTE: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'NOMECLIENTE'
+      Origin = 'NOMECLIENTE'
+      ProviderFlags = []
+      ReadOnly = True
+      Size = 50
     end
   end
 end

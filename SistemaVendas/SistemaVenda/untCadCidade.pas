@@ -9,12 +9,6 @@ uses
 
 type
   TfrmCadCidade = class(TfrmPadrao)
-    Label2: TLabel;
-    dbeNome: TDBEdit;
-    Label3: TLabel;
-    dbeSigla: TDBEdit;
-    Label1: TLabel;
-    DBEdit1: TDBEdit;
     procedure btnAdicionarClick(Sender: TObject);
   private
     { Private declarations }

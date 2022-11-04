@@ -9,19 +9,6 @@ uses
 
 type
   TfrmCadCliente = class(TfrmPadrao)
-    Label1: TLabel;
-    dbeCPF: TDBEdit;
-    Label2: TLabel;
-    dbeCodigo: TDBEdit;
-    Label3: TLabel;
-    dbeNome: TDBEdit;
-    Label4: TLabel;
-    dbeEnder: TDBEdit;
-    Label5: TLabel;
-    dbeTelefone: TDBEdit;
-    Label6: TLabel;
-    dbeCidade: TDBEdit;
-    DBLookupComboBox1: TDBLookupComboBox;
     procedure btnAdicionarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
@@ -43,7 +30,7 @@ uses untModulo;
 procedure TfrmCadCliente.btnAdicionarClick(Sender: TObject);
 begin
   inherited;
-    modulo.qryClienteIDCLIENTE.AsString:= modulo.AutoNum('IDCLIENTE', 'CLIENTE')
+  modulo.qryClienteIDCLIENTE.AsString:= modulo.AutoNum('IDCLIENTE','CLIENTE');
 end;
 
 procedure TfrmCadCliente.FormCreate(Sender: TObject);
@@ -55,7 +42,7 @@ end;
 procedure TfrmCadCliente.FormDestroy(Sender: TObject);
 begin
   inherited;
-  modulo.qryCliente.Close();
+  modulo.qryCidade.Close;
 end;
 
 end.

@@ -22,6 +22,7 @@ type
     procedure Cidade1Click(Sender: TObject);
     procedure Produto1Click(Sender: TObject);
     procedure Cliente1Click(Sender: TObject);
+    procedure Venda1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +36,7 @@ implementation
 
 {$R *.dfm}
 
-uses untCadCidade, untCadProduto, untCadCliente;
+uses untCadCidade, untCadProduto, untCadCliente, untCadVenda, untModulo;
 
 procedure TfrmPrincipal.Cidade1Click(Sender: TObject);
 begin
@@ -45,7 +46,7 @@ end;
 
 procedure TfrmPrincipal.Cliente1Click(Sender: TObject);
 begin
-    Application.CreateForm(TfrmCadCliente, frmCadCliente);
+    Application.CreateForm(TfrmCadCliente,frmCadCliente);
     frmCadCliente.Show;
 end;
 
@@ -67,6 +68,12 @@ procedure TfrmPrincipal.TimerTimer(Sender: TObject);
 begin
      stsBar.Panels[0].Text := DateToStr(Date);
      stsBar.Panels[1].Text := FormatDateTime('hh:mm',Time);
+end;
+
+procedure TfrmPrincipal.Venda1Click(Sender: TObject);
+begin
+  Application.CreateForm(TfrmCadVenda, frmCadVenda);
+  frmCadVenda.Show;
 end;
 
 end.

@@ -1,0 +1,8 @@
+inherited frmCadVenda: TfrmCadVenda
+  Caption = 'Cadastro das Vendas'
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited dts: TDataSource
+    DataSet = modulo.qryVenda
+  end
+end

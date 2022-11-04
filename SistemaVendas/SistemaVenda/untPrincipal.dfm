@@ -52,6 +52,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object Venda1: TMenuItem
       Caption = 'Venda'
+      OnClick = Venda1Click
     end
     object Sair1: TMenuItem
       Caption = 'Sair'
