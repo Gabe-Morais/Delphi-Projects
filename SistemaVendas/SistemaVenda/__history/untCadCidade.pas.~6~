@@ -1,0 +1,58 @@
+unit untCadCidade;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, untPadrao, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, Vcl.Mask, Vcl.DBCtrls;
+
+type
+  TfrmCadCidade = class(TfrmPadrao)
+    Label1: TLabel;
+    dbeCod: TDBEdit;
+    Label2: TLabel;
+    dbeNome: TDBEdit;
+    Label3: TLabel;
+    dbeSigla: TDBEdit;
+    procedure btnAdicionarClick(Sender: TObject);
+    procedure btnPesquisarClick(Sender: TObject);
+    procedure btnSelecionarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadCidade: TfrmCadCidade;
+
+implementation
+
+{$R *.dfm}
+
+uses untModulo, untPesCidade, untCadCliente, untCadProduto, untCadVenda,
+  untPadraoPesquisa, untPrincipal;
+
+procedure TfrmCadCidade.btnAdicionarClick(Sender: TObject);
+begin
+  inherited;
+  modulo.qryCidadeIDCIDADE.AsString :=  modulo.AutoNum('IDCIDADE','CIDADE');
+end;
+
+procedure TfrmCadCidade.btnPesquisarClick(Sender: TObject);
+begin
+  inherited;
+
+    frmPesCidade.show;
+end;
+
+procedure TfrmCadCidade.btnSelecionarClick(Sender: TObject);
+begin
+  inherited;
+  Application.CreateForm(TfrmPesCidade, frmPesCidade);
+  frmPesCidade.Show;
+
+end;
+
+end.

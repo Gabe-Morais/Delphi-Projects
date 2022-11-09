@@ -9,7 +9,8 @@ uses
   untCadProduto in 'untCadProduto.pas' {frmCadProduto},
   untCadCliente in 'untCadCliente.pas' {frmCadCliente},
   untCadVenda in 'untCadVenda.pas' {frmCadVenda},
-  untPadraoPesquisa in 'untPadraoPesquisa.pas' {frmPadraoPesquisa};
+  untPadraoPesquisa in 'untPadraoPesquisa.pas' {frmPadraoPesquisa},
+  untPesCidade in 'untPesCidade.pas' {frmPesCidade};
 
 {$R *.res}
 

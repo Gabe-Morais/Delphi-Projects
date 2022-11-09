@@ -10,7 +10,7 @@ object modulo: Tmodulo
     Connected = True
     LoginPrompt = False
     Left = 48
-    Top = 32
+    Top = 40
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'Forms'
@@ -125,7 +125,7 @@ object modulo: Tmodulo
       DisplayLabel = 'CPF'
       FieldName = 'CPFCLIENTE'
       Origin = 'CPFCLIENTE'
-      EditMask = '000\.000\.000\-0;1_'
+      EditMask = '000\.000\.000\-00;1;_'
     end
     object qryClienteFONECLIENTE: TStringField
       AutoGenerateValue = arDefault
@@ -155,10 +155,11 @@ object modulo: Tmodulo
     Connection = conexao
     SQL.Strings = (
       'SELECT V.*,'
-      '   C.NOMECLIENTE'
-      'FROM VENDA V, CLIENTE C'
-      'WHERE V.IDCLIENTE = C.IDCLIENTE')
-    Left = 456
+      '       C.NOMECLIENTE'
+      '  FROM VENDA V,'
+      '       CLIENTE C'
+      ' WHERE V.IDCLIENTE = C.IDCLIENTE ')
+    Left = 440
     Top = 136
     object qryVendaIDVENDA: TIntegerField
       DisplayLabel = 'N'#250'mero'
@@ -179,7 +180,7 @@ object modulo: Tmodulo
       DisplayLabel = 'Hora'
       FieldName = 'HORAVENDA'
       Origin = 'HORAVENDA'
-      EditMask = '!90:00;1;_'
+      EditMask = '90:00;1;_'
     end
     object qryVendaVALORVENDA: TBCDField
       AutoGenerateValue = arDefault

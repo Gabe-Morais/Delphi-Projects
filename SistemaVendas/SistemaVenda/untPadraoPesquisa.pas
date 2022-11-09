@@ -4,17 +4,18 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons,
-  Data.DB, Vcl.Grids, Vcl.DBGrids;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons, Vcl.Mask, Vcl.DBCtrls;
 
 type
   TfrmPadraoPesquisa = class(TForm)
     pnlBotoes: TPanel;
-    btnPesquisar: TBitBtn;
     btnFechar: TBitBtn;
+    btnPesquisar: TBitBtn;
     dbgPesquisa: TDBGrid;
     dtsPesquisa: TDataSource;
     pnlPesquisa: TPanel;
+    DataSource1: TDataSource;
     procedure btnFecharClick(Sender: TObject);
   private
     { Private declarations }
@@ -33,7 +34,7 @@ uses untModulo;
 
 procedure TfrmPadraoPesquisa.btnFecharClick(Sender: TObject);
 begin
- close;
+     close;
 end;
 
 end.

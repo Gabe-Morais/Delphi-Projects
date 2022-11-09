@@ -9,17 +9,17 @@ uses
 
 type
   TfrmCadVenda = class(TfrmPadrao)
-    dbeNomeCli: TDBEdit;
-    dbeCodCli: TDBEdit;
-    Label11: TLabel;
-    Label10: TLabel;
-    dbeTotal: TDBEdit;
-    dbeHora: TDBEdit;
-    Label9: TLabel;
-    dbeData: TDBEdit;
-    Label8: TLabel;
+    Label1: TLabel;
     dbeNum: TDBEdit;
-    Label7: TLabel;
+    Label2: TLabel;
+    dbeData: TDBEdit;
+    Label3: TLabel;
+    dbeHora: TDBEdit;
+    Label4: TLabel;
+    dbeTotal: TDBEdit;
+    Label5: TLabel;
+    dbeCodCli: TDBEdit;
+    dbeNomeCli: TDBEdit;
     procedure btnAdicionarClick(Sender: TObject);
   private
     { Private declarations }
@@ -34,15 +34,14 @@ implementation
 
 {$R *.dfm}
 
-uses untCadCidade, untCadCliente, untCadProduto, untModulo,
-  untPrincipal;
+uses untModulo;
 
 procedure TfrmCadVenda.btnAdicionarClick(Sender: TObject);
 begin
   inherited;
-  modulo.qryVendaIDVENDA.AsString := modulo.AutoNum('IDVENDA', 'VENDA');
-  modulo.qryVendaDATAVENDA.AsString := dateToStr(date);
-  modulo.qryVendaHORAVENDA.AsString := formatDateTime('hh:mm', time);
+  modulo.qryVendaIDVENDA.asString := modulo.AutoNum('IDVENDA','VENDA');
+  modulo.qryVendaDATAVENDA.asString := DatetoStr(date);
+  modulo.qryVendaHORAVENDA.asString := FormatDateTime('hh:mm',time);
 end;
 
 end.

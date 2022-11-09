@@ -1039,16 +1039,9 @@ object frmPadrao: TfrmPadrao
     Height = 235
     Align = alClient
     TabOrder = 2
-    ExplicitLeft = -8
-    ExplicitTop = 126
   end
   object dts: TDataSource
     Left = 728
     Top = 387
-  end
-  object DataSource1: TDataSource
-    DataSet = modulo.qryVenda
-    Left = 656
-    Top = 376
   end
 end

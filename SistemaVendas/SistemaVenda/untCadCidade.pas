@@ -9,7 +9,14 @@ uses
 
 type
   TfrmCadCidade = class(TfrmPadrao)
+    Label1: TLabel;
+    dbeCod: TDBEdit;
+    Label2: TLabel;
+    dbeNome: TDBEdit;
+    Label3: TLabel;
+    dbeSigla: TDBEdit;
     procedure btnAdicionarClick(Sender: TObject);
+    procedure btnPesquisarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,12 +30,20 @@ implementation
 
 {$R *.dfm}
 
-uses untModulo;
+uses untModulo, untPesCidade, untCadCliente, untCadProduto, untCadVenda,
+  untPadraoPesquisa, untPrincipal;
 
 procedure TfrmCadCidade.btnAdicionarClick(Sender: TObject);
 begin
   inherited;
   modulo.qryCidadeIDCIDADE.AsString :=  modulo.AutoNum('IDCIDADE','CIDADE');
+end;
+
+procedure TfrmCadCidade.btnPesquisarClick(Sender: TObject);
+begin
+  inherited;
+Application.CreateForm(TfrmPesCidade, frmPesCidade);
+  frmPesCidade.Show;
 end;
 
 end.

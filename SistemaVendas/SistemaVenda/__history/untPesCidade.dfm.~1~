@@ -1,0 +1,5 @@
+inherited frmPesCidade: TfrmPesCidade
+  Caption = 'frmPesCidade'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

@@ -3,101 +3,100 @@ inherited frmCadVenda: TfrmCadVenda
   PixelsPerInch = 96
   TextHeight = 13
   inherited pnlCampos: TPanel
-    ExplicitLeft = 0
-    ExplicitTop = 120
-    object Label11: TLabel
-      Left = 16
-      Top = 168
-      Width = 33
-      Height = 13
-      Caption = 'Cliente'
-      FocusControl = dbeCodCli
-    end
-    object Label10: TLabel
-      Left = 16
-      Top = 128
-      Width = 24
-      Height = 13
-      Caption = 'Total'
-      FocusControl = dbeTotal
-    end
-    object Label9: TLabel
-      Left = 16
-      Top = 88
-      Width = 23
-      Height = 13
-      Caption = 'Hora'
-    end
-    object Label8: TLabel
-      Left = 16
-      Top = 48
-      Width = 23
-      Height = 13
-      Caption = 'Data'
-      FocusControl = dbeData
-    end
-    object Label7: TLabel
-      Left = 16
-      Top = 8
+    object Label1: TLabel
+      Left = 8
+      Top = 0
       Width = 37
       Height = 13
       Caption = 'N'#250'mero'
       FocusControl = dbeNum
     end
-    object dbeNomeCli: TDBEdit
-      Left = 103
-      Top = 184
-      Width = 343
+    object Label2: TLabel
+      Left = 8
+      Top = 40
+      Width = 23
+      Height = 13
+      Caption = 'Data'
+      FocusControl = dbeData
+    end
+    object Label3: TLabel
+      Left = 8
+      Top = 80
+      Width = 23
+      Height = 13
+      Caption = 'Hora'
+      FocusControl = dbeHora
+    end
+    object Label4: TLabel
+      Left = 8
+      Top = 120
+      Width = 24
+      Height = 13
+      Caption = 'Total'
+      FocusControl = dbeTotal
+    end
+    object Label5: TLabel
+      Left = 8
+      Top = 160
+      Width = 33
+      Height = 13
+      Caption = 'Cliente'
+      FocusControl = dbeCodCli
+    end
+    object dbeNum: TDBEdit
+      Left = 8
+      Top = 16
+      Width = 97
       Height = 21
-      Color = clMoneyGreen
-      DataField = 'NOMECLIENTE'
-      DataSource = DataSource1
+      DataField = 'IDVENDA'
+      DataSource = dts
       ReadOnly = True
       TabOrder = 0
     end
-    object dbeCodCli: TDBEdit
-      Left = 16
-      Top = 184
-      Width = 81
+    object dbeData: TDBEdit
+      Left = 8
+      Top = 56
+      Width = 97
       Height = 21
-      DataField = 'IDCLIENTE'
-      DataSource = DataSource1
+      DataField = 'DATAVENDA'
+      DataSource = dts
       TabOrder = 1
     end
-    object dbeTotal: TDBEdit
-      Left = 16
-      Top = 141
-      Width = 89
-      Height = 21
-      DataField = 'VALORVENDA'
-      DataSource = DataSource1
-      TabOrder = 2
-    end
     object dbeHora: TDBEdit
-      Left = 16
-      Top = 104
-      Width = 89
+      Left = 8
+      Top = 96
+      Width = 97
       Height = 21
       DataField = 'HORAVENDA'
-      DataSource = DataSource1
+      DataSource = dts
+      TabOrder = 2
+    end
+    object dbeTotal: TDBEdit
+      Left = 8
+      Top = 136
+      Width = 97
+      Height = 21
+      DataField = 'VALORVENDA'
+      DataSource = dts
       TabOrder = 3
     end
-    object dbeData: TDBEdit
-      Left = 16
-      Top = 60
+    object dbeCodCli: TDBEdit
+      Left = 8
+      Top = 176
       Width = 89
-      Height = 22
-      DataField = 'DATAVENDA'
-      DataSource = DataSource1
+      Height = 21
+      DataField = 'IDCLIENTE'
+      DataSource = dts
       TabOrder = 4
     end
-    object dbeNum: TDBEdit
-      Left = 16
-      Top = 24
-      Width = 81
+    object dbeNomeCli: TDBEdit
+      Left = 124
+      Top = 176
+      Width = 322
       Height = 21
-      DataField = 'IDVENDA'
-      DataSource = DataSource1
+      Color = clMoneyGreen
+      DataField = 'NOMECLIENTE'
+      DataSource = dts
       ReadOnly = True
       TabOrder = 5
     end

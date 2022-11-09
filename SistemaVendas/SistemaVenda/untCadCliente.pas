@@ -9,6 +9,19 @@ uses
 
 type
   TfrmCadCliente = class(TfrmPadrao)
+    Label1: TLabel;
+    dbeCod: TDBEdit;
+    Label2: TLabel;
+    dbeNome: TDBEdit;
+    Label3: TLabel;
+    dbeEnder: TDBEdit;
+    Label4: TLabel;
+    dbeCpf: TDBEdit;
+    Label5: TLabel;
+    dbeFone: TDBEdit;
+    Label6: TLabel;
+    dbeCidade: TDBEdit;
+    DBLookupComboBox1: TDBLookupComboBox;
     procedure btnAdicionarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
